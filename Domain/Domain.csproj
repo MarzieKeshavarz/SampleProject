@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Business\**" />
+    <EmbeddedResource Remove="Entities\Business\**" />
+    <None Remove="Entities\Business\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.Abstractions" Version="1.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.5" />
+    <PackageReference Include="NetTopologySuite" Version="2.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+</Project>
